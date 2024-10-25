@@ -1,20 +1,15 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import {View, Text} from 'react-native';
+import Movie from './components/Movie';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+const AllMovies =() => {
+    return (
+        <View>
+            <Text></Text>
+            <Text></Text>
+            <Movie title="Doctor Sleep" year={2019} icon_name="paw" poster={require('./img/doctor-sleep.jpg')}/>
+        </View>
+    )
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default AllMovies;
